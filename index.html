@@ -22,7 +22,7 @@
                     <div class="ui-block-b">
                         <a href="#login" data-transition="slide" data-role="button" class="ui-bnt">login</a>
                         <p style="text-align: center">or</p>
-                        <button class="ui-btn">sign in</button>
+                        <a href="#signin" data-transition="slide" data-role="button" class="ui-bnt">sign in</a>
                     </div>
                     <div class="ui-block-c">
                     </div>
@@ -32,13 +32,13 @@
 
 </div> 
         
-        <div data-role="page" id="login">
+<div data-role="page" id="login">
   <div data-role="header">
   <h1>login</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <form method="post" action="demoform.asp">
+    <form method="post" action="login.php">
       <div class="ui-content">
         <label for="user">user name:</label>
         <input type="text" name="user" id="user">       
@@ -53,6 +53,38 @@
     </form>
   </div>
 </div>
+
+        
+        <div data-role="page" id="signin">
+            <div data-role="header">
+                <h1>signin</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <form method="post" action="#aaa" >
+                    <label for="fullname">full name:</label>
+                    <input type="text" name="fullname" id="fullname">
+                    <label for="username">username:</label>
+                    <input type="text" name="username" id="username">
+                    <label for="email">email:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="password">password:</label>
+                    <input type="password" name="password" id="password">
+                    <label for="check">I agree</label>
+                    <input type="checkbox" name="check" id="check">       
+                    <div class="ui-grid-b"> 
+                        <div class="ui-block-a"></div>
+                        <a href="#aaa" data-transition="flow"  ><input type="submit" data-inline="true" value="Submit" ></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div data-role="page" id="aaa">
+            <div data-role="header">
+                <h1>signin</h1>
+            </div>
+            <p>you have signin</p>
+        </div>
 
     </body>
 </html>
