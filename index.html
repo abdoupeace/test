@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
-        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-    </head>
-    <body>
-    <meta http-equiv="refresh" content="1;http://andou.byethost18.com/app/index.html" />
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<!--<link rel="stylesheet" href="jquery.mobile-1.4.3/jquery.mobile-1.4.3.css">
+<script src="jquery.mobile-1.4.3/jquery-1.11.1.js"></script>
+<script src="jquery.mobile-1.4.3/jquery.mobile-1.4.3.js"></script>-->
+<script src="js/main.js"></script>
+</head>
+<body> 
 
-    </body>
+
+
+<div data-role="page" id="news">
+  <div data-role="panel" id="overlayPanel1" data-display="overlay"> 
+    <h2>Overlay Panel</h2>
+    <ul data-role="listview" data-inset="true"> 
+      <li>
+        <a href="matchdujour.html" rel="external">
+        <h2>match du jour</h2>
+        </a>
+      </li>
+      <li>
+        <a href="alllegueinfo.html" rel="external">
+        <h2>deep statistique</h2>
+        </a>
+      </li>
+      <li>
+        <a href="leagueinfo.html" rel="external">
+        <h2>palyer vs player</h2>
+        </a>
+      </li>
+      <li>
+        <a href="alllegueinfo.html" rel="external">
+        <h2>club vs club</h2>
+        </a>
+      </li>
+
+    </ul>
+    <a data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> <!-- end panel-->
+
+  <div data-role="header" data-position="fixed" >
+    <h1>news</h1>
+    <a href="#overlayPanel1" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-notext ui-corner-all ui-shadow ui-nodisc-icon ui-alt-icon">menu</a>
+    <a onclick="location.reload(true)" class="ui-btn ui-btn-inline ui-icon-refresh ui-btn-icon-notext ui-corner-all ui-shadow ui-nodisc-icon ui-alt-icon">refrech</a>
+    
+  </div> <!-- end header -->
+  <div data-role="main" >
+
+      <ul data-role="listview" id="mainlist">
+          
+          
+      </ul><!-- end of list news -->
+  </div>
+</div>
+<div data-role="page" data-dialog="true" class="rrr" id="pagee">
+  <div date-role="main" id="pageinfo">
+
+    <img src="">
+    <h2></h2>
+    <p></p>
+
+  </div>
+</div>
+
+
+
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
